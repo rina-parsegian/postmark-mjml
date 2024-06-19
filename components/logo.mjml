@@ -1,0 +1,6 @@
+<!-- logo -->
+<mj-section mj-class="secondary-bg" padding="0">
+  <mj-column>
+    <mj-image src="http://192.168.0.15:5500/assets/postmark-logo.png" alt="postmark logo" href="https://www.postmarkapp.com" width="200px" css-class="header-logo" />
+  </mj-column>
+</mj-section>

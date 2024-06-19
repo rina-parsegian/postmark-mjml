@@ -1,0 +1,238 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-class name="primary-bg" background-color="#ffffff" />
+      <mj-class name="secondary-bg" background-color="#fbde02" />
+      <mj-class name="email-bg" background-color="#f6f4f9" />
+      <mj-class name="sub-bg" background-color="#000000" />
+    </mj-attributes>
+
+    <!-- breakpoint set for billing section -->
+    <mj-breakpoint width="597px"/>
+
+    <mj-style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .bill-to {
+        color: #a9a9a9;
+      }
+
+      .history-link {
+        color: #0c9af2;
+      }
+
+      .sub-link {
+        text-decoration: underline;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Arial, sans-serif, helvetica;
+      }
+
+      /* 479px or smaller apply these styles */
+      @media only screen and (max-width: 479px) {
+        .header-text {
+          font-size: 23px !important;
+          padding-top: 10px;
+          text-align: center;
+        }
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .socials {
+        max-width: 200px;
+      }
+    </mj-style>
+    
+  </mj-head>
+  <mj-body background-color="#eeece4">
+    <!-- logo -->
+    <mj-include path="./components/logo.mjml" />
+
+    <!-- title -->
+    <mj-section mj-class="primary-bg" padding="50px 30px 25px">
+      <mj-column width="10%">
+        <mj-image src="http://192.168.0.15:5500/assets/icons8-heart-48.png" alt="heart icon" width="28px" padding="0 20px 0 0" css-class="heart-icon" />
+      </mj-column>
+      <mj-column width="90%">
+        <mj-text font-size="26px" font-family="arial, sans-serif, helvetica" font-weight="bold" css-class="header-text" color="#252526" padding="2px 0 0">
+          <div class="header-text">Thanks for using Postmark</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- content -->
+    <mj-section mj-class="primary-bg" padding="25px 30px 25px">
+      <mj-column>
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          We've successfully charged your credit card for $10.00. The charge will appear on your statement as ActiveCampaign, LLC. This includes the monthly cost for your 10,000 email per month, as well as any extra emails you incurred during the last billing period.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- account billing info -->
+    <mj-section mj-class="primary-bg" padding="20px 30px 15px">
+      <mj-column>
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          Your account used <strong>4660</strong> emails this billing period.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- address & receipt info -->
+    <mj-section mj-class="primary-bg" padding="20px 30px 0px">
+      <mj-column padding="0 0 20px">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          Active Campaign, LLC <br>
+          1 North Dearborn St, 5th Floor <br>
+          Chicago, IL 60602
+        </mj-text>
+      </mj-column>
+      <mj-column padding="0 0 20px">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          <strong>Receipt #8930287</strong> <br>
+          Invoice date: June 14, 2023 <br>
+          Payment received: June 14, 2023
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- bill & billing address info -->
+    <mj-section mj-class="primary-bg" padding="0px 30px 20px">
+      <mj-column padding="0 0 20px">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          <strong>Bill to</strong> <a href="#" padding-left="5px" class="bill-to">Edit</a> <br>
+          Dept <br>
+          **** **********
+        </mj-text>
+      </mj-column>
+      <mj-column padding="0">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          <strong>Bill Address</strong> <br>
+          ***** <br>
+          ********, ***
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-include path="./components/divider.mjml" />
+
+    <!-- plan info -->
+    <mj-section mj-class="primary-bg" padding="30px 30px 30px">
+      <mj-column width="92%" padding="0 0 10px" css-class="column--left">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#a9a9a9" padding="0">
+          Monthly Plan (10,000 emails)
+        </mj-text>
+      </mj-column>
+      <mj-column width="8%" css-class="column--right">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#a9a9a9" padding="0" >
+          $10.00
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-include path="./components/divider.mjml" />
+
+    <!-- emails info -->
+    <mj-section mj-class="primary-bg" padding="30px 30px 30px">
+      <mj-column width="93%" padding="0 0 10px">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#a9a9a9" padding="0">
+          Extra emails (0)
+        </mj-text>
+      </mj-column>
+      <mj-column width="7%">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#a9a9a9" padding="0">
+          $0.00
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-include path="./components/divider.mjml" />
+
+    <!-- total info -->
+    <mj-section mj-class="primary-bg" padding="30px 30px 30px">
+      <mj-column width="92%" padding="0 0 10px">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          Total
+        </mj-text>
+      </mj-column>
+      <mj-column width="8%">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          $10.00
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-include path="./components/divider.mjml" />
+
+    <!-- paid info -->
+    <mj-section mj-class="primary-bg" padding="30px 30px 30px">
+      <mj-column width="92%" padding="0 0 10px">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          Amount Paid with Visa<br>
+          (ending in ****)
+        </mj-text>
+      </mj-column>
+      <mj-column width="8%">
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          $10.00
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-include path="./components/divider.mjml" />
+
+    <!-- history info -->
+    <mj-section mj-class="primary-bg" padding="40px 30px 40px">
+      <mj-column>
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#252526" padding="0">
+          You can also view a history of your receipts by <a href="#" class="history-link">logging into your Postmark account.</a> If you have any questions, feel free to reply to this email.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- email info -->
+    <mj-section mj-class="email-bg" padding="30px 30px 20px">
+      <mj-column>
+        <mj-image src="http://192.168.0.15:5500/assets/icons8-mail-50.png" alt="envelope icon" width="28px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- email title -->
+    <mj-section mj-class="email-bg" padding="0 30px 0">
+      <mj-column>
+        <mj-text font-size="16px" font-family="arial, sans-serif, helvetica" font-weight="bold" line-height="1.6" color="#6a618c" padding="0" align="center">
+          Protect Your Brand From Email Scammers
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- email title -->
+    <mj-section mj-class="email-bg" padding="10px 30px 10px">
+      <mj-column>
+        <mj-text font-size="14px" font-family="arial, sans-serif, helvetica" font-weight="normal" line-height="1.6" color="#6a618c" padding="0" align="center">
+          Monitor who's sending email using your docmins and protect your brand from spoofing and phishing attacks with DMARC Digests.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- email button -->
+    <mj-section mj-class="email-bg" padding="20px 30px 30px">
+      <mj-column>
+        <mj-button font-family="arial, sans-serfi, helvetica" font-size="14px" font-weight="bold" line-height="1.6" color="#ffffff" background-color="#49a671" padding="0" inner-padding="10px 16px">
+          Try it free for 14 days
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- footer -->
+    <mj-include path="./components/footer.mjml" />
+
+  </mj-body>
+</mjml>
